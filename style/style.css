@@ -31,7 +31,15 @@ header nav .navLeft ul {
   display: flex;
 }
 header nav .navLeft ul li {
-  margin: 0 20px;
+  margin: 0 10px;
+  background-color: #fff1f4;
+  color: #cbcbcb;
+  border-radius: 20px;
+  padding: 6px 12px;
+}
+header nav .navLeft ul li .fa-chevron-down {
+  font-size: 10px;
+  padding: 3px;
 }
 header nav .navRight {
   display: flex;
@@ -41,6 +49,10 @@ header nav .navRight .dashAva {
   display: flex;
   align-items: center;
 }
+header nav .navRight .dashAva .fa-chevron-down {
+  font-size: 10px;
+  padding: 3px;
+}
 header nav .navRight .dashAva img {
   width: 40px;
   border-radius: 50%;
@@ -48,4 +60,14 @@ header nav .navRight .dashAva img {
 header nav .navRight .dashBtn {
   display: flex;
   align-items: center;
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 8px 18px;
+  gap: 10px;
+}
+header nav .navRight .dashBtn .fas {
+  border: 1px solid;
+  padding: 3px;
+  font-size: 10px;
+  border-radius: 50%;
 }
