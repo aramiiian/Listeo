@@ -4,6 +4,8 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
 }
 header {
   width: 100%;
@@ -12,6 +14,7 @@ header {
   padding: 0 10%;
   display: flex;
   align-items: center;
+  display: fixed;
 }
 header nav {
   width: 100%;
@@ -30,14 +33,23 @@ header nav .navLeft img {
 header nav .navLeft ul {
   display: flex;
 }
-header nav .navLeft ul li {
-  margin: 0 10px;
-  background-color: #fff1f4;
-  color: #cbcbcb;
+header nav .navLeft ul li a {
+  margin: 0 3px;
+  color: #323232;
   border-radius: 20px;
-  padding: 6px 12px;
+  padding: 8px 12px;
+  position: relative;
 }
-header nav .navLeft ul li .fa-chevron-down {
+header nav .navLeft ul li .active {
+  color: #f91942;
+  background-color: #fff1f4;
+}
+header nav .navLeft ul li a:hover {
+  transition: ease 0.3s;
+  color: #f91942;
+  background-color: #fff1f4;
+}
+header nav .navLeft ul li a .fa-chevron-down {
   font-size: 10px;
   padding: 3px;
 }
@@ -48,6 +60,11 @@ header nav .navRight {
 header nav .navRight .dashAva {
   display: flex;
   align-items: center;
+  color: #323232;
+}
+header nav .navRight .dashAva:hover {
+  transition: ease 0.3s;
+  color: #f91942;
 }
 header nav .navRight .dashAva .fa-chevron-down {
   font-size: 10px;
@@ -56,7 +73,10 @@ header nav .navRight .dashAva .fa-chevron-down {
 header nav .navRight .dashAva img {
   width: 40px;
   border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid #c4c4c49c;
 }
+
 header nav .navRight .dashBtn {
   display: flex;
   align-items: center;
@@ -64,10 +84,45 @@ header nav .navRight .dashBtn {
   border-radius: 20px;
   padding: 8px 18px;
   gap: 10px;
+  color: #f91942;
+}
+header nav .navRight .dashBtn:hover {
+  background-color: #f91942;
+  transition: ease 0.3s;
+  color: #ffffff;
 }
 header nav .navRight .dashBtn .fas {
   border: 1px solid;
   padding: 3px;
   font-size: 10px;
   border-radius: 50%;
+}
+header nav .navLeft ul li .homeDrop {
+  display: none;
+}
+header nav .navLeft ul li:hover .homeDrop {
+  border: 1px solid #3232322b;
+  display: block;
+  position: absolute;
+  /* left: 0; */
+  /* top: 100%; */
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+header nav .navLeft ul li:hover .homeDrop ul {
+  display: block;
+  padding: 20px 20px;
+}
+header nav .navLeft ul li:hover .homeDrop ul li {
+  margin: 10px 0px;
+  color: #323232;
+}
+/* sections */
+
+.sectonOne {
+  width: 100%;
+  height: 90vh;
+  background: url(./img/Без-названия.jpeg) no-repeat top / 100%;
+  display: block;
 }
