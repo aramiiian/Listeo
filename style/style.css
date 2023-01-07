@@ -14,3 +14,64 @@ header {
   justify-content: space-evenly;
   align-items: center;
 }
+
+header .fa-chevron-down {
+  font-size: 12px;
+}
+
+header .navLeft {
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .navLeft .logo img {
+  width: 130px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul li {
+  padding: 8px 18px;
+  margin: 0 5px;
+  border: 1px solid;
+  border-radius: 20px;
+}
+
+header .navRigth {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header .navRigth .userNav {
+  display: flex;
+  align-items: center;
+}
+
+header .navRigth .userNav .dashAva {
+  width: 40px;
+  border-radius: 50px;
+}
+
+header .navRigth .userNav > p {
+  margin: 0 10px;
+}
+
+header .navRigth .userBtn {
+  padding: 14px 20px;
+  border: 1px solid;
+  border-radius: 25px;
+}
+
+header .navRigth .userBtn p .fa-plus {
+  font-size: 10px;
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 3px;
+}
