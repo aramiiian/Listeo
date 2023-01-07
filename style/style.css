@@ -4,6 +4,8 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
 }
 
 header {
@@ -13,6 +15,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  gap: 5%;
 }
 
 header .fa-chevron-down {
@@ -20,13 +23,14 @@ header .fa-chevron-down {
 }
 
 header .navLeft {
-  width: 45%;
+  min-width: 650px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 header .navLeft .logo img {
   width: 130px;
+  cursor: pointer;
 }
 
 header nav ul {
@@ -35,15 +39,25 @@ header nav ul {
   align-items: center;
 }
 
+header nav ul .active {
+  background-color: #fff1f4;
+  color: #f91942;
+}
 header nav ul li {
-  padding: 8px 18px;
+  padding: 10px 16px;
   margin: 0 5px;
-  border: 1px solid;
   border-radius: 20px;
+  cursor: pointer;
+}
+
+header nav ul li:hover {
+  background-color: #fff1f4;
+  color: #f91942;
+  transition: 0.4s ease;
 }
 
 header .navRigth {
-  width: 20%;
+  min-width: 300px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -52,6 +66,12 @@ header .navRigth {
 header .navRigth .userNav {
   display: flex;
   align-items: center;
+  cursor: pointer;
+}
+
+header .navRigth .userNav:hover {
+  color: #f91942;
+  transition: 0.4s ease;
 }
 
 header .navRigth .userNav .dashAva {
@@ -64,13 +84,22 @@ header .navRigth .userNav > p {
 }
 
 header .navRigth .userBtn {
-  padding: 14px 20px;
-  border: 1px solid;
+  padding: 12px 20px;
+  border: 1px solid #f91942;
   border-radius: 25px;
+  color: #f91942;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+header .navRigth .userBtn:hover {
+  color: #fff1f4;
+  background-color: #f91942;
+  transition: 0.4s ease;
 }
 
 header .navRigth .userBtn p .fa-plus {
-  font-size: 10px;
+  font-size: 8px;
   border: 1px solid;
   border-radius: 50%;
   padding: 3px;
