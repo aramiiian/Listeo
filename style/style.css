@@ -192,4 +192,24 @@ header .navRigth .userBtn p .fa-plus {
   width: 100%;
   height: 500px;
   border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionTwo .twoBg {
+  width: 80%;
+  height: min-content;
+  border: 1px solid #000;
+}
+.sectionTwo .twoBg > h2 {
+  font-size: 30px;
+  font-weight: normal;
+  margin: 100px 0 20px 0;
+}
+
+.sectionTwo .twoBg > hr {
+  width: 60px;
+  background: #f91942;
+  border: 1px solid #f91942;
 }
