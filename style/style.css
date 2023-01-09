@@ -199,7 +199,6 @@ header .navRigth .userBtn p .fa-plus {
 
 .sectionTwo .twoBg {
   width: 80%;
-
   border: 1px solid #000;
 }
 .sectionTwo .twoBg .twoHead > h2 {
@@ -217,9 +216,11 @@ header .navRigth .userBtn p .fa-plus {
   width: 100%;
   border: 1px solid;
   display: flex;
+  justify-content: space-around;
 }
 .sectionTwo .twoBg .twoBox .tbox {
   width: 200px;
   height: 200px;
   border: 1px solid;
+  position: relative;
 }
