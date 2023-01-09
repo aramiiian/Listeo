@@ -222,5 +222,20 @@ header .navRigth .userBtn p .fa-plus {
   width: 200px;
   height: 200px;
   border: 1px solid;
-  position: relative;
+  display: flex;
+}
+
+.sectionTwo .twoBg .twoBox .tbox i {
+  font-size: 50px;
+  color: #f91942;
+}
+
+.sectionTwo .twoBg .twoBox .tbox p {
+  font-size: 16px;
+}
+
+.sectionTwo .twoBg .twoBox .tbox span {
+  border-radius: 20px;
+  padding: 2px 8px;
+  background: #939393;
 }
