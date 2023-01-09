@@ -201,7 +201,6 @@ header .navRigth .userBtn p .fa-plus {
   width: 80%;
   height: min-content;
   border: 1px solid #000;
-  display: flex;
 }
 .sectionTwo .twoBg .twoHead > h2 {
   font-size: 30px;
@@ -215,7 +214,11 @@ header .navRigth .userBtn p .fa-plus {
   border: 1px solid #f91942;
 }
 .sectionTwo .twoBg .twoBox {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  border: 1px solid;
+}
+.sectionTwo .twoBg .twoBox div {
+  width: 200px;
+  height: 200px;
   border: 1px solid;
 }
