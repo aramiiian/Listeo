@@ -249,14 +249,23 @@ header .navRigth .userBtn p .fa-plus {
   justify-content: center;
 }
 
+.sectionThree .threeHead {
+  text-align: center;
+}
 .sectionThree .threeHead h2 {
   font-size: 30px;
   font-weight: normal;
-  text-align: center;
 }
 
 .sectionThree .threeHead hr {
   width: 60px;
   border: 1px solid #f91942;
   background-color: #f91942;
+  margin: 20px 0 20px 130px;
+}
+
+.sectionThree .threeHead p {
+  font-size: 20px;
+  font-weight: normal;
+  color: #888888;
 }
