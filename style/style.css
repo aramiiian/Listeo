@@ -223,6 +223,9 @@ header .navRigth .userBtn p .fa-plus {
   height: 200px;
   border: 1px solid;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .sectionTwo .twoBg .twoBox .tbox i {
