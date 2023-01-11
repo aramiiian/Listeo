@@ -245,8 +245,6 @@ header .navRigth .userBtn p .fa-plus {
   width: 100%;
   height: 600px;
   border: 1px solid;
-  display: flex;
-  justify-content: center;
 }
 
 .sectionThree .threeHead {
@@ -268,4 +266,10 @@ header .navRigth .userBtn p .fa-plus {
   font-size: 20px;
   font-weight: normal;
   color: #888888;
+}
+
+.sectionThree .threeBox {
+  width: 80%;
+  height: 1000px;
+  border: 1px solid #000;
 }
