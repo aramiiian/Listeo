@@ -282,6 +282,7 @@ header .navRigth .userBtn p .fa-plus {
 
 .sectionThree .threeBox div {
   width: 30%;
+  height: min-content;
   border: 1px solid #000;
 }
 
