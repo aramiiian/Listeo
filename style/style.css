@@ -280,12 +280,17 @@ header .navRigth .userBtn p .fa-plus {
   justify-content: space-between;
 }
 
-.sectionThree .threeBox div {
+.sectionThree .threeBox .box {
   width: 30%;
   height: min-content;
   border: 1px solid #000;
 }
 
-.sectionThree .threeBox div img {
+.sectionThree .threeBox .box img {
   width: 100%;
+}
+
+.sectionThree .threeBox .box .itemRev {
+  height: 40px;
+  padding: 10px 20px;
 }
