@@ -286,11 +286,48 @@ header .navRigth .userBtn p .fa-plus {
   border: 1px solid #000;
 }
 
-.sectionThree .threeBox .box img {
+.sectionThree .threeBox .box1 .boxImg {
+  background: url(img/listing-item-01.jpg) no-repeat center / cover;
   width: 100%;
+  height: 250px;
+}
+.sectionThree .threeBox .box2 .boxImg {
+  background: url(img/listing-item-02.jpg) no-repeat center / cover;
+  width: 100%;
+  height: 250px;
+}
+.sectionThree .threeBox .box3 .boxImg {
+  background: url(img/listing-item-03.jpg) no-repeat center / cover;
+  width: 100%;
+  height: 250px;
 }
 
 .sectionThree .threeBox .box .itemRev {
   height: 40px;
   padding: 10px 20px;
+  display: block;
+}
+
+.sectionThree .threeBox .boxImg p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.sectionThree .threeBox .boxImg .imgItem span {
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: #f91942;
+  font-size: 10px;
+  color: #fff;
+  letter-spacing: 1.5px;
+}
+
+.sectionThree .threeBox .boxImg .imgItem h4 {
+  font-size: 22px;
+  color: #fff;
+}
+
+.sectionThree .threeBox .boxImg .imgItem p {
+  font-weight: normal;
 }
