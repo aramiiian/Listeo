@@ -281,7 +281,7 @@ header .navRigth .userBtn p .fa-plus {
 }
 
 .sectionThree .threeBox .box {
-  width: 30%;
+  width: 32%;
   height: min-content;
   border: 1px solid #000;
 }
@@ -325,7 +325,7 @@ header .navRigth .userBtn p .fa-plus {
   font-weight: 600;
 }
 
-.sectionThree .threeBox .boxImg .imgItem span {
+.sectionThree .threeBox .boxImg .imgItem .leftItem span {
   padding: 6px 12px;
   border-radius: 20px;
   background: #f91942;
@@ -334,12 +334,12 @@ header .navRigth .userBtn p .fa-plus {
   letter-spacing: 1.5px;
 }
 
-.sectionThree .threeBox .boxImg .imgItem h4 {
+.sectionThree .threeBox .boxImg .imgItem .leftItem h4 {
   font-size: 22px;
   color: #fff;
 }
 
-.sectionThree .threeBox .boxImg .imgItem p {
+.sectionThree .threeBox .boxImg .imgItem .leftItem p {
   font-weight: normal;
   color: #888888;
   font-size: 16px;
