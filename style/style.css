@@ -472,7 +472,6 @@ header .navRigth .userBtn p .fa-plus {
 
 .sectionSix {
   width: 100%;
-  border: 1px solid;
   padding: 70px;
   display: flex;
   flex-direction: column;
@@ -577,7 +576,6 @@ header .navRigth .userBtn p .fa-plus {
 footer {
   width: 100%;
   height: 500px;
-  border: 1px solid;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -585,13 +583,11 @@ footer {
 }
 footer .footerBox {
   width: 80%;
-  border: 1px solid;
   height: 350px;
   display: flex;
 }
 footer .footerBox .leftBox {
   width: 40%;
-  border: 1px solid;
   padding: 30px;
 }
 footer .footerBox .leftBox img {
@@ -653,5 +649,17 @@ footer .footerBox .rightBox .rigIcon {
 footer .footerBox .rightBox .rigIcon i {
   font-size: 18px;
   margin: 0 10px;
+  color: #696969;
+}
+footer .fotbot {
+  width: 80%;
+  text-align: center;
+}
+footer .fotbot hr {
+  border: 1px solid #696969;
+  margin: 40px 0;
+}
+footer .fotbot p {
+  font-size: 16px;
   color: #696969;
 }
