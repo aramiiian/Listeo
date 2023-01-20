@@ -573,3 +573,9 @@ header .navRigth .userBtn p .fa-plus {
   color: #fff;
   transition: 0.3s linear;
 }
+
+footer {
+  width: 100%;
+  height: 500px;
+  border: 1px solid;
+}
