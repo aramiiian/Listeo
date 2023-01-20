@@ -403,7 +403,25 @@ header .navRigth .userBtn p .fa-plus {
   height: 85%;
   border: 1px solid;
 }
-
-.sectionFour .slideTxt .sld i {
+.sectionFour .slideTxt .sld .txtbox {
+  display: flex;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid #000;
+}
+.sectionFour .slideTxt .sld .txtbox i {
   font-size: 40px;
+  margin: 10px 30px;
+}
+.sectionFour .slideTxt .sld .txtbox p {
+  font-size: 16px;
+  width: 70%;
+  line-height: 35px;
+}
+
+.sectionFour .slideTxt .sld .asd {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #000;
 }
