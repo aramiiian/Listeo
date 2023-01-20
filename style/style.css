@@ -450,7 +450,7 @@ header .navRigth .userBtn p .fa-plus {
   background: rgba(34, 34, 34, 0.652);
 }
 .sectionFive .fiveBox h2 {
-  font-size: 30px;
+  font-size: 35px;
   color: #fff;
 }
 .sectionFive .fiveBox p {
@@ -473,4 +473,22 @@ header .navRigth .userBtn p .fa-plus {
 .sectionSix {
   width: 100%;
   height: 100vh;
+  border: 1px solid;
+  padding: 70px;
+}
+.sectionSix .sixHead {
+  width: 50%;
+  margin: 0 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sectionSix .sixHead h2 {
+  font-size: 30px;
+  font-weight: normal;
+  margin: 15px 0;
+}
+.sectionSix .sixHead hr {
+  width: 60px;
+  border: 1px solid #f91942;
 }
