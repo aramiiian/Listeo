@@ -84,7 +84,7 @@ header .navLeft nav ul li .homeDrop ul {
   margin: 10px;
 }
 header .navLeft nav ul li .homeDrop ul li {
-  width: 200px;
+  width: 170px;
   padding: 10px;
   color: #696969;
 }
@@ -120,6 +120,31 @@ header .navLeft nav ul li .userDrop > ul > li:hover {
   transition: 0.3s linear;
 }
 
+header .navLeft nav ul li .listingsDrop {
+  display: none;
+}
+header .navLeft nav ul li:hover .listingsDrop {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: #fff;
+  z-index: 10;
+}
+header .navLeft nav ul li .listingsDrop ul {
+  display: block;
+  margin: 10px;
+}
+header .navLeft nav ul li .listingsDrop ul li {
+  width: 170px;
+  padding: 10px;
+  color: #696969;
+}
+
+header .navLeft nav ul li .listingsDrop > ul > li:hover {
+  color: #f91942;
+  transition: 0.3s linear;
+}
 header .navRigth {
   min-width: 300px;
   display: flex;
