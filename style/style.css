@@ -176,7 +176,31 @@ header .navLeft nav ul li .listingsDrop ul li .listDrop ul li:hover {
   color: #f91942;
   transition: 0.3s linear;
 }
-header .navLeft nav ul li .listingsDrop > ul > li:hover {
+/* header .navLeft nav ul li .listingsDrop > ul > li:hover {
+  color: #f91942;
+  transition: 0.3s linear;
+} */
+header .navLeft nav ul li .listingsDrop ul li .gridDrop {
+  display: none;
+}
+header .navLeft nav ul li:hover .listingsDrop ul li:hover .gridDrop {
+  display: block;
+  position: absolute;
+  left: 170px;
+  top: 0;
+  background: #fff;
+  z-index: 10;
+}
+header .navLeft nav ul li .listingsDrop ul li .gridDrop ul {
+  display: block;
+  margin: 10px;
+}
+header .navLeft nav ul li .listingsDrop ul li .gridDrop ul li {
+  width: 170px;
+  padding: 10px;
+  color: #696969;
+}
+header .navLeft nav ul li .listingsDrop ul li .gridDrop ul li:hover {
   color: #f91942;
   transition: 0.3s linear;
 }
