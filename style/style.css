@@ -332,6 +332,30 @@ header .navRigth .userNav > p {
   margin: 0 10px;
 }
 
+header .navRigth .userNav .userNavdrop {
+  display: none;
+}
+header .navRigth .userNav .userNavdropOn {
+  display: block;
+  position: absolute;
+  top: 65px;
+  background: #fff;
+  z-index: 10;
+}
+
+header .navRigth .userNav .userNavdrop ul {
+  display: block;
+  margin: 10px;
+}
+header .navRigth .userNav .userNavdrop ul li {
+  width: 150px;
+  padding: 6px 10px;
+  color: #696969;
+}
+header .navRigth .userNav .userNavdrop ul li:hover {
+  color: #f91942;
+  transition: 0.3s linear;
+}
 header .navRigth .userBtn {
   padding: 12px 20px;
   border: 1px solid #f91942;
