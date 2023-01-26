@@ -273,6 +273,38 @@ header .navLeft nav ul li .listingsDrop ul li .streetDrop ul li:hover {
   color: #f91942;
   transition: 0.3s linear;
 }
+
+header .navLeft nav ul li .pagesDrop {
+  display: none;
+}
+header .navLeft nav ul li:hover .pagesDrop {
+  display: block;
+  position: absolute;
+  right: -350%;
+  top: 100%;
+  background: #fff;
+  z-index: 10;
+  display: flex;
+}
+header .navLeft nav ul li .pagesDrop ul {
+  display: block;
+  margin: 10px;
+}
+header .navLeft nav ul li .pagesDrop ul a {
+  color: #000;
+  font-weight: 600;
+  margin: 15px;
+}
+header .navLeft nav ul li .pagesDrop ul li {
+  width: 170px;
+  padding: 6px 10px;
+  color: #696969;
+}
+
+header .navLeft nav ul li .pagesDrop > ul > li:hover {
+  color: #f91942;
+  transition: 0.3s linear;
+}
 header .navRigth {
   min-width: 300px;
   display: flex;
