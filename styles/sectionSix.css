@@ -1,0 +1,102 @@
+.sectionSix {
+  width: 100%;
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sectionSix .sixHead {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sectionSix .sixHead h2 {
+  font-size: 30px;
+  font-weight: normal;
+}
+.sectionSix .sixHead hr {
+  width: 60px;
+  border: 1px solid #f91942;
+  margin: 15px 0 40px;
+}
+.sectionSix .sixBox {
+  width: 90%;
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sectionSix .sixBox .sxb {
+  width: 30%;
+}
+
+.sectionSix .sixBox .sixBox1 {
+  background: url(img/blog-compact-post-01.jpg) no-repeat center / cover;
+  border-radius: 10px;
+}
+.sectionSix .sixBox .sixBox2 {
+  background: url(img/blog-compact-post-02.jpg) no-repeat center / cover;
+  border-radius: 10px;
+}
+.sectionSix .sixBox .sixBox3 {
+  background: url(img/blog-compact-post-03.jpg) no-repeat center / cover;
+  border-radius: 10px;
+}
+
+.sectionSix .sixBox .sxb .boxItems {
+  width: 100%;
+  height: 100%;
+  background: rgba(34, 34, 34, 0.416);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sectionSix .sixBox .sxb .boxItems .topItem {
+  padding: 30px;
+}
+.sectionSix .sixBox .sxb .boxItems .topItem span {
+  padding: 6px 12px;
+  background: #f91942;
+  border-radius: 20px;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: #fff;
+}
+
+.sectionSix .sixBox .sxb .boxItems .bottomItem {
+  padding: 30px;
+}
+
+.sectionSix .sixBox .sxb .boxItems .bottomItem span {
+  color: #fff;
+}
+
+.sectionSix .sixBox .sxb .boxItems .bottomItem h3 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: normal;
+  margin: 15px 0;
+}
+
+.sectionSix .sixBox .sxb .boxItems .bottomItem p {
+  font-size: 16px;
+  color: #c7c6c6;
+  line-height: 25px;
+}
+
+.sectionSix input {
+  padding: 14px 24px;
+  border-radius: 24px;
+  border: 1px solid #f91942;
+  color: #f91942;
+  background: none;
+  font-weight: 600;
+  margin: 40px 0 0;
+}
+.sectionSix input:hover {
+  background: #f91942;
+  color: #fff;
+  transition: 0.3s linear;
+}
