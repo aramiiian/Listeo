@@ -1,0 +1,371 @@
+.headerScroll {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5%;
+  position: sticky;
+  background: #fff;
+  z-index: 10;
+  transition: 0.5s linear;
+  top: 0;
+  box-shadow: 0 0 8px #21212140;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5%;
+}
+
+header .fa-chevron-down {
+  font-size: 12px;
+}
+
+header .navLeft {
+  min-width: 650px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .navLeft .logo img {
+  width: 130px;
+  cursor: pointer;
+}
+
+header .navLeft nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .navLeft nav > ul .active {
+  background-color: #fff1f4;
+  color: #f91942;
+}
+header .navLeft nav ul li {
+  padding: 10px 16px;
+  margin: 0 5px;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+}
+header .navLeft > nav > ul > li:hover {
+  background-color: #fff1f4;
+  color: #f91942;
+  transition: 0.4s ease;
+}
+
+header .navLeft nav ul li .homeDrop {
+  display: none;
+}
+header .navLeft nav ul li:hover .homeDrop {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: #fff;
+  z-index: 10;
+}
+header .navLeft nav ul li .homeDrop ul {
+  display: block;
+  margin: 10px;
+}
+header .navLeft nav ul li .homeDrop ul li {
+  width: 170px;
+  padding: 10px;
+  color: #696969;
+}
+
+header .navLeft nav ul li .homeDrop > ul > li:hover {
+  color: #f91942;
+  transition: 0.3s linear;
+}
+
+header .navLeft nav ul li .userDrop {
+  display: none;
+}
+header .navLeft nav ul li:hover .userDrop {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: #fff;
+  z-index: 10;
+}
+header .navLeft nav ul li .userDrop ul {
+  display: block;
+  margin: 10px;
+}
+header .navLeft nav ul li .userDrop ul li {
+  width: 130px;
+  padding: 10px;
+  color: #696969;
+}
+
+header .navLeft nav ul li .userDrop > ul > li:hover {
+  color: #f91942;
+  transition: 0.3s linear;
+}
+
+header .navLeft nav ul li .listingsDrop {
+  display: none;
+}
+header .navLeft nav ul li:hover .listingsDrop {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: #fff;
+  z-index: 10;
+}
+header .navLeft nav ul li .listingsDrop ul {
+  display: block;
+  margin: 10px;
+}
+header .navLeft nav ul li .listingsDrop ul li {
+  width: 170px;
+  padding: 10px;
+  color: #696969;
+}
+header .navLeft nav ul li .listingsDrop ul li i {
+  float: right;
+}
+
+header .navLeft nav ul li .listingsDrop > ul > li:hover {
+  color: #f91942;
+  transition: 0.3s linear;
+}
+
+header .navLeft nav ul li .listingsDrop ul li .listDrop {
+  display: none;
+}
+header .navLeft nav ul li:hover .listingsDrop ul li:hover .listDrop {
+  display: block;
+  position: absolute;
+  left: 170px;
+  top: 0;
+  background: #fff;
+  z-index: 10;
+}
+header .navLeft nav ul li .listingsDrop ul li .listDrop ul {
+  display: block;
+  margin: 10px;
+}
+header .navLeft nav ul li .listingsDrop ul li .listDrop ul li {
+  width: 170px;
+  padding: 10px;
+  color: #696969;
+}
+header .navLeft nav ul li .listingsDrop ul li i {
+  float: right;
+}
+header .navLeft nav ul li .listingsDrop ul li .listDrop ul li:hover {
+  color: #f91942;
+  transition: 0.3s linear;
+}
+
+header .navLeft nav ul li .listingsDrop ul li .gridDrop {
+  display: none;
+}
+header .navLeft nav ul li:hover .listingsDrop ul li:hover .gridDrop {
+  display: block;
+  position: absolute;
+  left: 170px;
+  top: 0;
+  background: #fff;
+  z-index: 10;
+}
+header .navLeft nav ul li .listingsDrop ul li .gridDrop ul {
+  display: block;
+  margin: 10px;
+}
+header .navLeft nav ul li .listingsDrop ul li .gridDrop ul li {
+  width: 170px;
+  padding: 10px;
+  color: #696969;
+}
+header .navLeft nav ul li .listingsDrop ul li .gridDrop ul li:hover {
+  color: #f91942;
+  transition: 0.3s linear;
+}
+header .navLeft nav ul li .listingsDrop ul li .halfDrop {
+  display: none;
+}
+header .navLeft nav ul li:hover .listingsDrop ul li:hover .halfDrop {
+  display: block;
+  position: absolute;
+  left: 170px;
+  top: 0;
+  background: #fff;
+  z-index: 10;
+}
+header .navLeft nav ul li .listingsDrop ul li .halfDrop ul {
+  display: block;
+  margin: 10px;
+}
+header .navLeft nav ul li .listingsDrop ul li .halfDrop ul li {
+  width: 170px;
+  padding: 10px;
+  color: #696969;
+}
+header .navLeft nav ul li .listingsDrop ul li .halfDrop ul li:hover {
+  color: #f91942;
+  transition: 0.3s linear;
+}
+header .navLeft nav ul li .listingsDrop ul li .singleDrop {
+  display: none;
+}
+header .navLeft nav ul li:hover .listingsDrop ul li:hover .singleDrop {
+  display: block;
+  position: absolute;
+  left: 170px;
+  top: 0;
+  background: #fff;
+  z-index: 10;
+}
+header .navLeft nav ul li .listingsDrop ul li .singleDrop ul {
+  display: block;
+  margin: 10px;
+}
+header .navLeft nav ul li .listingsDrop ul li .singleDrop ul li {
+  width: 170px;
+  padding: 10px;
+  color: #696969;
+}
+header .navLeft nav ul li .listingsDrop ul li .singleDrop ul li:hover {
+  color: #f91942;
+  transition: 0.3s linear;
+}
+header .navLeft nav ul li .listingsDrop ul li .streetDrop {
+  display: none;
+}
+header .navLeft nav ul li:hover .listingsDrop ul li:hover .streetDrop {
+  display: block;
+  position: absolute;
+  left: 170px;
+  top: 0;
+  background: #fff;
+  z-index: 10;
+}
+header .navLeft nav ul li .listingsDrop ul li .streetDrop ul {
+  display: block;
+  margin: 10px;
+}
+header .navLeft nav ul li .listingsDrop ul li .streetDrop ul li {
+  width: 170px;
+  padding: 10px;
+  color: #696969;
+}
+header .navLeft nav ul li .listingsDrop ul li .streetDrop ul li:hover {
+  color: #f91942;
+  transition: 0.3s linear;
+}
+
+header .navLeft nav ul li .pagesDrop {
+  display: none;
+}
+header .navLeft nav ul li:hover .pagesDrop {
+  display: block;
+  position: absolute;
+  right: -350%;
+  top: 100%;
+  background: #fff;
+  z-index: 10;
+  display: flex;
+}
+header .navLeft nav ul li .pagesDrop ul {
+  display: block;
+  margin: 10px;
+}
+header .navLeft nav ul li .pagesDrop ul a {
+  color: #000;
+  font-weight: 600;
+  margin: 15px;
+}
+header .navLeft nav ul li .pagesDrop ul li {
+  width: 170px;
+  padding: 6px 10px;
+  color: #696969;
+}
+
+header .navLeft nav ul li .pagesDrop > ul > li:hover {
+  color: #f91942;
+  transition: 0.3s linear;
+}
+header .navRigth {
+  min-width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header .navRigth .userNav {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+header .navRigth .userNav:hover {
+  color: #f91942;
+  transition: 0.4s ease;
+}
+
+header .navRigth .userNav .dashAva {
+  width: 40px;
+  border-radius: 50px;
+}
+
+header .navRigth .userNav > p {
+  margin: 0 10px;
+}
+
+header .navRigth .userNav .userNavdrop {
+  display: none;
+}
+header .navRigth .userNav .userNavdropOn {
+  display: block;
+  position: absolute;
+  top: 65px;
+  background: #fff;
+  z-index: 10;
+}
+
+header .navRigth .userNav .userNavdrop ul {
+  display: block;
+  margin: 10px;
+}
+header .navRigth .userNav .userNavdrop ul li {
+  width: 150px;
+  padding: 6px 10px;
+  color: #696969;
+}
+header .navRigth .userNav .userNavdrop ul li:hover {
+  color: #f91942;
+  transition: 0.3s linear;
+}
+header .navRigth .userBtn {
+  padding: 12px 20px;
+  border: 1px solid #f91942;
+  border-radius: 25px;
+  color: #f91942;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+header .navRigth .userBtn:hover {
+  color: #fff1f4;
+  background-color: #f91942;
+  transition: 0.4s ease;
+}
+
+header .navRigth .userBtn p .fa-plus {
+  font-size: 8px;
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 3px;
+}
