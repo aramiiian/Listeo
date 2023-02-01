@@ -36,12 +36,6 @@
   align-items: center;
   text-align: center;
 }
-.sectionTwo .twoBg .twoBox .eat:hover {
-  background: url(./img/category-box-01.jpg) no-repeat center / 100%;
-  transition: 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transform: translateY(-10px);
-  color: #fff;
-}
 
 .sectionTwo .twoBg .twoBox .tbox .tbx i {
   font-size: 40px;

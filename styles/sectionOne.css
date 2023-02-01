@@ -48,13 +48,14 @@
   justify-content: space-evenly;
   background: #fff;
   gap: 7%;
+  z-index: 9;
 }
 .sectionOne .oneBg .oneLeft .oneSearch > input:nth-child(1) {
   padding: 15px 0;
   width: 23%;
   border: none;
-  border-radius: 30px;
 }
+
 .sectionOne .oneBg .oneLeft .oneSearch > input:nth-child(2) {
   padding: 15px 0;
   width: 23%;
@@ -76,10 +77,47 @@
   font-weight: 600;
   font-size: 18px;
 }
-.sectionOne .oneBg .oneRigth {
+.sectionOne .oneBg .slider {
+  position: relative;
+  width: min-content;
+}
+.sectionOne .oneBg .slider .dots {
+  height: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  top: 600px;
+  left: 220px;
+}
+.sectionOne .oneBg .slider .dots .dot {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.sectionOne .oneBg .slider .dots .dot:hover {
+  background: #fff;
+}
+.sectionOne .oneBg .slider .dots .selected {
+  background: #fff;
+}
+.sectionOne .oneBg .slider .cutter {
+  width: 500px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.sectionOne .oneBg .slider .cutter .wrapper {
+  width: max-content;
+  border-radius: 14px;
+}
+.sectionOne .oneBg .slider .cutter .wrapper img {
+  transition: 600ms transform ease-in-out;
+  float: left;
   width: 500px;
   height: 600px;
-  background: url(img/category-box-01.jpg) no-repeat center / 100%;
-  margin: 80px 0;
+  margin: 80px 0 0;
   border-radius: 14px;
 }

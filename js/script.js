@@ -4,51 +4,45 @@ const userNav = header.getElementsByClassName("userNav")[0];
 const userNavdrop = userNav.getElementsByClassName("userNavdrop")[0];
 const oneHead = document.getElementsByClassName("oneHead")[0];
 const oneH1 = oneHead.getElementsByTagName("h1")[0];
+const wrapper = document.getElementsByClassName("wrapper")[0];
+const sliderImg = wrapper.getElementsByTagName("img");
+const dots = document.querySelector(".dots");
+let ACTIVE = 0;
 
 ///FUNCTIONS
-function titleAnim() {
-  const titText = ["Restaurants", "Hotels", "Attractions"];
-  let line = 0;
-  let count = 0;
-  let out = "";
 
-  function typeTitle() {
-    let interval = setTimeout(() => {
-      out += titText[line][count];
-      oneH1.innerText = out + "|";
-      count++;
-      if (count >= titText[line].length) {
-        return;
-      }
-
-      typeTitle();
-    }, 300);
+function moveSlider() {
+  if (ACTIVE >= sliderImg.length) ACTIVE = 0;
+  if (ACTIVE <= -1) ACTIVE = sliderImg.length - 1;
+  for (let i of sliderImg) {
+    i.style.transform = `translate(${-ACTIVE * 100}%)`;
   }
-  typeTitle();
+}
+function setDots() {
+  for (let i of sliderImg) {
+    const dot = document.createElement("div");
+    dot.classList.add("dot");
+    dots.appendChild(dot);
+  }
 }
 
-function titleAnimation() {
-  const TITLES = ["Restaurants", "Hotels", "Attractions"];
-
-  //   function animate(index) {
-  //     if (index >= TITLES.length) {
-  //       animate(0);
-
-  //       return;
-  //     }
-
-  //     const title = TITLES[index];
-
-  //     title.split("").forEach((character) => {
-  //       setTimeout(() => {
-  //         oneH1.innerText = oneH1.innerText + character;
-  //       }, 300);
-  //     });
-  //   }
-
-  //   animate(0);
+function updateDots(e) {
+  if (e) {
+    for (let i = 0; i < dots.children.length; i++) {
+      dots.children[i].classList.remove("selected");
+      if (e.target === dots.children[i]) {
+        ACTIVE = i;
+        e.target.classList.add("selected");
+        moveSlider();
+      }
+    }
+  } else {
+    for (let i = 0; i < dots.children.length; i++) {
+      dots.children[i].classList.remove("selected");
+      if (i === ACTIVE) dots.children[i].classList.add("selected");
+    }
+  }
 }
-
 ///LISTENERR
 
 window.addEventListener("scroll", function () {
@@ -60,6 +54,15 @@ userNav.addEventListener("click", function () {
 });
 
 window.addEventListener("DOMContentLoaded", function () {
-  titleAnimation();
-  titleAnim();
+  setDots();
+  updateDots();
 });
+
+dots.addEventListener("click", function (e) {
+  if (!e.target.classList.contains("dot")) return;
+  updateDots(e);
+});
+setInterval(() => {
+  moveSlider(ACTIVE++);
+  updateDots();
+}, 5000);
