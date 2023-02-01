@@ -29,8 +29,7 @@
 .sectionTwo .twoBg .twoBox .tbox {
   width: 200px;
   height: 200px;
-  border: 1px solid rgba(203, 203, 203, 0.211);
-  box-shadow: 0.5px 1px 1.5px rgba(128, 128, 128, 0.293);
+  box-shadow: 0 0 8px #2121212a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,5 +49,5 @@
 .sectionTwo .twoBg .twoBox .tbox .tbx span {
   border-radius: 20px;
   padding: 2px 8px;
-  background: #d9d9d9;
+  background: #e1e1e1b9;
 }

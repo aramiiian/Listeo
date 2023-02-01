@@ -25,6 +25,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/script.js" defer></script>
+    
   </head>
   <body>
     <header>
@@ -175,7 +176,7 @@
       <div class="oneBg">
         <div class="oneLeft">
           <div class="oneHead">
-            <h1>Find Nearby </h1>
+            <h1>Find Nearby <span class="typeText"></span></h1>
             <p>Expolore top-rated attractions, activities and more</p>
           </div>
           <div class="oneSearch">
@@ -497,5 +498,17 @@
         <p>© 2021 Listeo. All Rights Reserved.</p>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+            let typed = new Typed(".typeText", {
+            strings: ["Attractions"," Restaurants"," Hotels"],
+              typeSpeed: 80,
+              backSpeed: 80,
+              backDelay: 4000,
+              startDelay: 1000,
+              loop: true,
+              showCursor: true
+            });
+    </script>
   </body>
 </html>

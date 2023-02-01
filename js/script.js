@@ -1,9 +1,11 @@
-///VARS
+///----------------VARS---------------
+
+//  NAVIGATION VARS
 const header = this.document.querySelector("header");
 const userNav = header.getElementsByClassName("userNav")[0];
 const userNavdrop = userNav.getElementsByClassName("userNavdrop")[0];
-const oneHead = document.getElementsByClassName("oneHead")[0];
-const oneH1 = oneHead.getElementsByTagName("h1")[0];
+
+// SLIDER VARS
 const wrapper = document.getElementsByClassName("wrapper")[0];
 const sliderImg = wrapper.getElementsByTagName("img");
 const dots = document.querySelector(".dots");
@@ -62,6 +64,7 @@ dots.addEventListener("click", function (e) {
   if (!e.target.classList.contains("dot")) return;
   updateDots(e);
 });
+
 setInterval(() => {
   moveSlider(ACTIVE++);
   updateDots();
