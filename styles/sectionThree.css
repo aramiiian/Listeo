@@ -1,11 +1,14 @@
 .sectionThree {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .sectionThree .threeHead {
   width: 400px;
   text-align: center;
-  margin: 70px 35%;
+  margin: 70px 0;
 }
 .sectionThree .threeHead h2 {
   font-size: 30px;
@@ -28,7 +31,6 @@
 .sectionThree .threeBox {
   width: 80%;
   height: 400px;
-  margin: 0 10%;
   display: flex;
   justify-content: space-between;
 }
@@ -112,4 +114,10 @@
   background: rgba(101, 101, 101, 0.512);
   border-radius: 50%;
   color: #fff;
+}
+
+@media screen and (min-width: 2560px) {
+  .sectionThree .threeBox {
+    width: 1120px;
+  }
 }

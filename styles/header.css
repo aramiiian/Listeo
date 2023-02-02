@@ -19,7 +19,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  gap: 5%;
+  gap: 100px;
 }
 
 header .fa-chevron-down {
@@ -27,7 +27,7 @@ header .fa-chevron-down {
 }
 
 header .navLeft {
-  min-width: 650px;
+  width: 650px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -307,7 +307,7 @@ header .navLeft nav ul li .pagesDrop > ul > li:hover {
   transition: 0.3s linear;
 }
 header .navRigth {
-  min-width: 300px;
+  width: 300px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -378,4 +378,59 @@ header .navRigth .userBtn p .fa-plus {
   border: 1px solid;
   border-radius: 50%;
   padding: 3px;
+}
+
+@media screen and (min-width: 2560px) {
+  header {
+    justify-content: center;
+    gap: 220px;
+  }
+  .headerScroll {
+    justify-content: center;
+    gap: 220px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 0 40px;
+  }
+  header .navLeft {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(44, 44, 44, 0.282);
+  }
+  header .navLeft .respons1024 {
+    width: 45px;
+    height: 45px;
+    background: #e1e1e1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 3px;
+  }
+  header .navLeft .respons1024 span {
+    width: 20px;
+    height: 1px;
+    border: 1px solid #000;
+  }
+  header .navLeft nav {
+    display: none;
+  }
+  header .navRigth {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
 }

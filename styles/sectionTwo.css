@@ -86,3 +86,9 @@
   color: #fff;
   transition: 0.1s linear;
 }
+
+@media screen and (min-width: 2560px) {
+  .sectionTwo .twoBg {
+    width: 1120px;
+  }
+}

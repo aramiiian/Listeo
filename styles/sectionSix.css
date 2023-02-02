@@ -104,3 +104,9 @@
   color: #fff;
   transition: 0.3s linear;
 }
+
+@media screen and (min-width: 2560px) {
+  .sectionSix .sixBox {
+    width: 1120px;
+  }
+}

@@ -11,6 +11,8 @@ const sliderImg = wrapper.getElementsByTagName("img");
 const dots = document.querySelector(".dots");
 let ACTIVE = 0;
 
+const resp1024 = document.getElementsByClassName("respons1024")[0];
+
 ///FUNCTIONS
 
 function moveSlider() {
@@ -65,6 +67,9 @@ dots.addEventListener("click", function (e) {
   updateDots(e);
 });
 
+resp1024.addEventListener("click", function () {
+  console.log("asd");
+});
 setInterval(() => {
   moveSlider(ACTIVE++);
   updateDots();
