@@ -37,7 +37,10 @@
   width: 32%;
   height: min-content;
 }
-
+.sectionThree .threeBox .box:hover {
+  transform: translateY(-10px);
+  transition: 0.2s linear;
+}
 .sectionThree .threeBox .box1 .boxImg {
   background: url(img/listing-item-01.jpg) no-repeat center / cover;
   width: 100%;

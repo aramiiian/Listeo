@@ -30,6 +30,10 @@
 .sectionSix .sixBox .sxb {
   width: 30%;
 }
+.sectionSix .sixBox .sxb:hover {
+  transform: translateY(-10px);
+  transition: 0.2s linear;
+}
 
 .sectionSix .sixBox .sixBox1 {
   background: url(img/blog-compact-post-01.jpg) no-repeat center / cover;

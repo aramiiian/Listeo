@@ -26,6 +26,7 @@
   display: flex;
   justify-content: space-around;
 }
+
 .sectionTwo .twoBg .twoBox .tbox {
   width: 200px;
   height: 200px;
@@ -36,18 +37,52 @@
   text-align: center;
 }
 
+.sectionTwo .twoBg .twoBox .tbox:hover {
+  background-color: rgba(47, 47, 47, 0.308);
+  transform: translateY(-10px);
+  transition: 0.2s linear;
+}
+.sectionTwo .twoBg .twoBox .eat:hover {
+  background: url(./img/category-box-01.jpg) no-repeat center / cover;
+}
+.sectionTwo .twoBg .twoBox .hotels:hover {
+  background: url(./img/category-box-02.jpg) no-repeat center / cover;
+}
+.sectionTwo .twoBg .twoBox .shops:hover {
+  background: url(./img/category-box-03.jpg) no-repeat center / cover;
+}
+.sectionTwo .twoBg .twoBox .nigthlife:hover {
+  background: url(./img/blog-compact-post-01.jpg) no-repeat center / cover;
+}
+.sectionTwo .twoBg .twoBox .events:hover {
+  background: url(./img/blog-compact-post-02.jpg) no-repeat center / cover;
+}
 .sectionTwo .twoBg .twoBox .tbox .tbx i {
   font-size: 40px;
   color: #f91942;
 }
-
+.sectionTwo .twoBg .twoBox .tbox:hover .tbx i {
+  color: #fff;
+  transition: 0.1s linear;
+}
 .sectionTwo .twoBg .twoBox .tbox .tbx p {
   font-size: 16px;
   margin: 8px 0;
+}
+
+.sectionTwo .twoBg .twoBox .tbox:hover .tbx p {
+  color: #fff;
+  transition: 0.1s linear;
 }
 
 .sectionTwo .twoBg .twoBox .tbox .tbx span {
   border-radius: 20px;
   padding: 2px 8px;
   background: #e1e1e1b9;
+}
+
+.sectionTwo .twoBg .twoBox .tbox:hover .tbx span {
+  background: #f91942;
+  color: #fff;
+  transition: 0.1s linear;
 }
