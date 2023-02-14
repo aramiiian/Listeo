@@ -1,6 +1,5 @@
 .sectionTwo {
   width: 100%;
-  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +23,8 @@
 .sectionTwo .twoBg .twoBox {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .sectionTwo .twoBg .twoBox .tbox {
@@ -90,5 +90,57 @@
 @media screen and (min-width: 2560px) {
   .sectionTwo .twoBg {
     width: 1120px;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .sectionTwo .twoBg .twoBox {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: normal;
+    gap: 20px;
+  }
+  .sectionTwo .twoBg .twoBox .tbox {
+    width: 30%;
+    height: 200px;
+    box-shadow: 0 0 8px #2121212a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .sectionTwo .twoBg {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 990px) {
+  .sectionTwo .twoBg .twoBox {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: normal;
+    gap: 20px;
+  }
+  .sectionTwo .twoBg .twoBox .tbox {
+    width: 30%;
+    height: 200px;
+    box-shadow: 0 0 8px #2121212a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sectionTwo .twoBg .twoBox .tbox {
+    width: 47%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .sectionTwo .twoBg .twoBox .tbox {
+    width: 80%;
   }
 }

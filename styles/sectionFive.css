@@ -36,3 +36,11 @@
     padding: 150px 400px;
   }
 }
+@media screen and (max-width: 768px) {
+  .sectionFive .fiveBox p {
+    width: 100%;
+  }
+  .sectionFive {
+    height: 600px;
+  }
+}

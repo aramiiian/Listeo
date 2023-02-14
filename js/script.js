@@ -4,6 +4,9 @@
 const header = this.document.querySelector("header");
 const userNav = header.getElementsByClassName("userNav")[0];
 const userNavdrop = userNav.getElementsByClassName("userNavdrop")[0];
+const nav = header.getElementsByTagName("nav")[0];
+let navActive = false;
+let navWindActive = true;
 
 // SLIDER VARS
 const wrapper = document.getElementsByClassName("wrapper")[0];
@@ -50,7 +53,10 @@ function updateDots(e) {
 ///LISTENERR
 
 window.addEventListener("scroll", function () {
-  header.classList.toggle("headerScroll", window.scrollY > 120);
+  if (window.innerWidth >= 1025) {
+    header.classList.toggle("headerScroll", window.scrollY > 120);
+    console.log(window.innerWidth);
+  }
 });
 
 userNav.addEventListener("click", function () {
@@ -68,8 +74,14 @@ dots.addEventListener("click", function (e) {
 });
 
 resp1024.addEventListener("click", function () {
-  console.log("asd");
+  navActive = !navActive;
+
+  navActive ? (nav.style.left = 0) : (nav.style.left = "-450px");
 });
+// window.addEventListener("click", function () {
+//   navWindActive = !navWindActive;
+//   navWindActive ? (nav.style.left = "-400px") : (navActive = !navActive);
+// });
 setInterval(() => {
   moveSlider(ACTIVE++);
   updateDots();
