@@ -31,7 +31,7 @@
 .sectionThree .threeBox {
   width: 80%;
   height: 400px;
-  display: flex;
+  display: none;
   justify-content: space-between;
 }
 
@@ -114,6 +114,50 @@
   background: rgba(101, 101, 101, 0.512);
   border-radius: 50%;
   color: #fff;
+}
+
+/* ------------------------------------------------ */
+.threeSlide {
+  position: relative;
+  width: min-content;
+}
+.threecutter {
+  width: 1120px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid;
+}
+.threewrapper {
+  width: 1120px;
+  display: flex;
+  gap: 35px;
+}
+.sldimg img {
+  width: 350px;
+  height: 250px;
+  float: left;
+}
+.sld3 {
+  position: relative;
+  width: 350px;
+}
+.leftItem {
+  position: absolute;
+  color: #fff;
+}
+/* ------------------------------------------------- */
+.threeDots {
+  width: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 40px 0;
+}
+
+.thdot {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #888888;
+  border-radius: 50%;
 }
 
 @media screen and (min-width: 2560px) {
