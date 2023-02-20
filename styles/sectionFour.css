@@ -73,3 +73,24 @@
   font-size: 10px;
   letter-spacing: 2px;
 }
+
+@media screen and (max-width: 1024px) {
+  .sectionFour .slideTxt .sld {
+    width: 47%;
+  }
+
+  .sectionFour .slideTxt .sldthree {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sectionFour .slideTxt .sld {
+    width: 100%;
+  }
+  .sectionFour .slideTxt .sldtwo {
+    display: none;
+  }
+  .sectionFour .slideTxt .sldthree {
+    display: none;
+  }
+}

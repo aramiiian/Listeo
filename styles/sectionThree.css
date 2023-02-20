@@ -28,14 +28,14 @@
   color: #888888;
 }
 
-.sectionThree .threeBox {
+/* .sectionThree .threeBox {
   width: 80%;
   height: 400px;
   display: none;
   justify-content: space-between;
-}
+} */
 
-.sectionThree .threeBox .box {
+/* .sectionThree .threeBox .box {
   width: 32%;
   height: min-content;
 }
@@ -69,9 +69,9 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 30px;
-}
+} */
 
-.sectionThree .threeBox .box .itemRev {
+/* .sectionThree .threeBox .box .itemRev {
   height: 40px;
   padding: 10px 20px;
   display: block;
@@ -87,9 +87,9 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-}
+} */
 
-.sectionThree .threeBox .boxImg .imgItem .leftItem span {
+/* .sectionThree .threeBox .boxImg .imgItem .leftItem span {
   padding: 6px 12px;
   border-radius: 20px;
   background: #f91942;
@@ -114,24 +114,22 @@
   background: rgba(101, 101, 101, 0.512);
   border-radius: 50%;
   color: #fff;
-}
+} */
 
-/* ------------------------------------------------ */
 .threeSlide {
   position: relative;
   width: min-content;
 }
 .threecutter {
   width: 1120px;
-  border-radius: 14px;
   overflow: hidden;
-  border: 1px solid;
 }
 .threewrapper {
   width: 1120px;
   display: flex;
   gap: 35px;
 }
+
 .sldimg img {
   width: 350px;
   height: 250px;
@@ -140,12 +138,49 @@
 .sld3 {
   position: relative;
   width: 350px;
+  display: flex;
+  align-items: flex-end;
 }
-.leftItem {
+
+.itemBox {
   position: absolute;
+  padding: 30px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+}
+.itemBox .rigthItem {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #31313181;
+}
+.itemBox .rigthItem i {
+  font-size: 18px;
   color: #fff;
 }
-/* ------------------------------------------------- */
+
+.itemBox .leftItem span {
+  background: #f91942;
+  padding: 8px 12px;
+  border-radius: 25px;
+  font-size: 8px;
+  letter-spacing: 2px;
+  color: #fff;
+}
+.itemBox .leftItem h4 {
+  font-size: 20px;
+  margin: 15px 0 5px;
+  color: #fff;
+}
+.itemBox .leftItem p {
+  color: #888888;
+}
+
 .threeDots {
   width: 50px;
   display: flex;
@@ -156,21 +191,150 @@
 .thdot {
   width: 15px;
   height: 15px;
+  appearance: none;
   border: 2px solid #888888;
   border-radius: 50%;
 }
+.thdot:checked {
+  background: #888888;
+}
+@media screen and (max-width: 1240px) {
+  .threecutter {
+    width: 1010px;
+    overflow: hidden;
+  }
+  .threewrapper {
+    width: 1010px;
+    display: flex;
+    gap: 35px;
+  }
 
-@media screen and (min-width: 2560px) {
-  .sectionThree .threeBox {
-    width: 1120px;
+  .sldimg img {
+    width: 310px;
+    height: 250px;
+    float: left;
+  }
+  .sld3 {
+    position: relative;
+    width: 310px;
+    display: flex;
+    align-items: flex-end;
   }
 }
-
 @media screen and (max-width: 1024px) {
-  .sectionThree .threeBox {
-    width: 90%;
+  .threecutter {
+    width: 740px;
+    overflow: hidden;
+  }
+  .threewrapper {
+    width: 740px;
+    display: flex;
+    gap: 35px;
+  }
+
+  .sldimg img {
+    width: 350px;
+    height: 250px;
+    float: left;
+  }
+  .sld3 {
+    position: relative;
+    width: 350px;
+    display: flex;
+    align-items: flex-end;
   }
 }
 
-@media screen and (min-width: 758px) {
+@media screen and (max-width: 758px) {
+  .threecutter {
+    width: 600px;
+    overflow: hidden;
+  }
+  .threewrapper {
+    width: 600px;
+    display: flex;
+    gap: 0;
+  }
+
+  .sldimg img {
+    width: 600px;
+    height: 250px;
+    float: left;
+  }
+  .sld3 {
+    position: relative;
+    width: 600px;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+@media screen and (max-width: 620px) {
+  .threecutter {
+    width: 500px;
+    overflow: hidden;
+  }
+  .threewrapper {
+    width: 500px;
+    display: flex;
+    gap: 0;
+  }
+
+  .sldimg img {
+    width: 500px;
+    height: 250px;
+    float: left;
+  }
+  .sld3 {
+    position: relative;
+    width: 500px;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .threecutter {
+    width: 400px;
+    overflow: hidden;
+  }
+  .threewrapper {
+    width: 400px;
+    display: flex;
+    gap: 0;
+  }
+
+  .sldimg img {
+    width: 400px;
+    height: 250px;
+    float: left;
+  }
+  .sld3 {
+    position: relative;
+    width: 400px;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+@media screen and (max-width: 425px) {
+  .threecutter {
+    width: 320px;
+    overflow: hidden;
+  }
+  .threewrapper {
+    width: 320px;
+    display: flex;
+    gap: 0;
+  }
+
+  .sldimg img {
+    width: 320px;
+    height: 250px;
+    float: left;
+  }
+  .sld3 {
+    position: relative;
+    width: 350px;
+    display: flex;
+    align-items: flex-end;
+  }
 }

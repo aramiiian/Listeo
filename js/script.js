@@ -27,7 +27,9 @@ function moveSliderTheree() {
   if (ACTIVE2 >= 4) ACTIVE2 = 0;
   if (ACTIVE2 <= -1) ACTIVE2 = threeCard.length - 1;
   for (let i of threeCard) {
-    i.style.transform = `translate(${-ACTIVE2 * 110}%)`;
+    i.style.transform = `translate(${
+      -ACTIVE2 * (window.innerWidth >= 768 ? 110 : 100)
+    }%)`;
   }
 }
 
@@ -63,6 +65,7 @@ function updateDots(e) {
     }
   }
 }
+
 // /LISTENERR
 thdot1.addEventListener("click", (e) => {
   if (ACTIVE2 >= 3) moveSliderTheree((ACTIVE2 -= 3));
@@ -73,7 +76,7 @@ thdot2.addEventListener("click", (e) => {
   if (ACTIVE2 <= 2) moveSliderTheree((ACTIVE2 += 3));
 });
 window.addEventListener("scroll", function () {
-  if (window.innerWidth >= 1025) {
+  if (window.innerWidth >= 1023) {
     header.classList.toggle("headerScroll", window.scrollY > 120);
   }
 });
@@ -97,11 +100,9 @@ resp1024.addEventListener("click", function () {
 
   navActive ? (nav.style.left = 0) : (nav.style.left = "-450px");
 });
-// window.addEventListener("click", function () {
-//   navWindActive = !navWindActive;
-//   navWindActive ? (nav.style.left = "-400px") : (navActive = !navActive);
-// });
+
 setInterval(() => {
   moveSlider(ACTIVE++);
+  moveSliderTheree(ACTIVE2++);
   updateDots();
 }, 5000);
